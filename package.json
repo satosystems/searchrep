@@ -1,8 +1,14 @@
 {
+  "publisher": "satosystems",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/satosystems/searchrep.git"
+  },
   "name": "searchrep",
-  "displayName": "searchrep",
+  "icon": "images/icon.png",
+  "displayName": "SearchRep",
   "description": "Search and replace via search result editor",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.49.0"
   },
@@ -10,31 +16,56 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:searchrep.helloWorld"
+    "onCommand:searchrep.replace"
   ],
-  "main": "./extension.js",
+  "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "searchrep.helloWorld",
-        "title": "Hello World"
+        "command": "searchrep.replace",
+        "title": "SearchRep: Replace using changed search results"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "searchrep.replace",
+        "key": "ctrl+shift+r",
+        "mac": "cmd+shift+r"
       }
     ]
   },
   "scripts": {
+    "format": "standard --fix",
     "lint": "eslint .",
     "pretest": "npm run lint",
-    "test": "node ./test/runTest.js"
+    "test": "node ./test/runTest.js",
+    "webpack": "webpack --mode development",
+    "webpack-dev": "webpack --mode development --watch",
+    "vscode:prepublish": "webpack --mode production",
+    "package": "vsce package"
+  },
+  "standard": {
+    "globals": [
+      "suite",
+      "test"
+    ],
+    "ignore": [
+      "node_modules/**"
+    ]
   },
   "devDependencies": {
-    "@types/vscode": "^1.49.0",
     "@types/glob": "^7.1.3",
     "@types/mocha": "^8.0.0",
     "@types/node": "^14.0.27",
+    "@types/vscode": "^1.49.0",
     "eslint": "^7.9.0",
+    "eslint-loader": "^4.0.2",
     "glob": "^7.1.6",
     "mocha": "^8.1.3",
+    "standard": "^14.3.4",
     "typescript": "^4.0.2",
-    "vscode-test": "^1.4.0"
+    "vscode-test": "^1.4.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
   }
 }
