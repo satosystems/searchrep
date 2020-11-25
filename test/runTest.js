@@ -1,12 +1,12 @@
 const path = require('path')
 const { runTests } = require('vscode-test')
 
-async function main() {
+async function main () {
   try {
     // The folder containing the Extension Manifest package.json
     // Passed to `--extensionDevelopmentPath`
     const extensionDevelopmentPath = path.resolve(__dirname, '../')
-    console.log(extensionDevelopmentPath)
+    console.info(extensionDevelopmentPath)
 
     // The path to the extension test script
     // Passed to --extensionTestsPath

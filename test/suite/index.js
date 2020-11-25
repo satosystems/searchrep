@@ -2,7 +2,7 @@ const path = require('path')
 const Mocha = require('mocha')
 const glob = require('glob')
 
-function run() {
+function run () {
   // Create the mocha test
   const mocha = new Mocha({
     ui: 'tdd',
@@ -10,7 +10,7 @@ function run() {
   })
 
   const testsRoot = path.resolve(__dirname, '..')
-  console.log(testsRoot)
+  console.info(testsRoot)
 
   return new Promise((resolve, reject) => {
     glob('**/**.test.js', { cwd: testsRoot }, (err, files) => {
