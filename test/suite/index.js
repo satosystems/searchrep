@@ -10,7 +10,7 @@ function run () {
   })
 
   const testsRoot = path.resolve(__dirname, '..')
-  console.log(testsRoot)
+  console.info(testsRoot)
 
   return new Promise((resolve, reject) => {
     glob('**/**.test.js', { cwd: testsRoot }, (err, files) => {
