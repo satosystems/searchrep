@@ -6,7 +6,8 @@ This extension replaces any files in the search results with any contents in bul
 
 ![screencast](https://media.githubusercontent.com/media/satosystems/searchrep/main/images/demo.gif)
 
-- YouTube: <https://youtu.be/bZKkUyePc68>
+- [YouTube](https://youtu.be/bZKkUyePc68)
+- [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=satosystems.searchrep)
 
 ### How to use
 
