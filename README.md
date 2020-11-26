@@ -24,7 +24,3 @@ This extension replaces any files in the search results with any contents in bul
 ## Known Issues
 
 This extension replaces files assuming file encoding is UTF-8.
-
-### Acknowledgement
-
-- Icon: [SnipIcons Regular, 100 free Icons by Snip Master](https://icon-icons.com/en/pack/SnipIcons-Regular/1523)
