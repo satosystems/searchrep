@@ -8,6 +8,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Add tests
 
+## [1.2.0] - 2020-11-26
+
+### Changed
+
+- Replace icon
+
 ## [1.1.0] - 2020-11-25
 
 ### Changed
@@ -20,6 +26,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Initial release
 
-[Unreleased]: https://github.com/satosystems/searchrep/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/satosystems/searchrep/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/satosystems/searchrep/releases/tag/v1.2.0
 [1.1.0]: https://github.com/satosystems/searchrep/releases/tag/v1.1.0
 [1.0.0]: https://github.com/satosystems/searchrep/releases/tag/v1.0.0
